@@ -23,6 +23,7 @@ app.post('/add', (req, res) => {
   let characterName = {name: req.body.name}
   query.addBook(bookTitle)
   .then((data) => {
+    console.log('DATA = ', data);
     let bookId = data
     query.addCharacter(characterName)
     .then((data) => {
