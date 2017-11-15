@@ -2,10 +2,10 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Let's Add Data</title>
+    <title>Let's Add Data {{title}}</title>
   </head>
   <body>
-    {{#each data}}
+    {{#each books}}
     <h1>{{this.title}}</h1>
     <h2>Charaters: {{#each name}}<li>{{this}}</li>{{/each}}</h2>
     {{/each}}
